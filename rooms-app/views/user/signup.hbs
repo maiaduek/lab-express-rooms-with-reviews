@@ -1,0 +1,13 @@
+<h1>Sign up!</h1>
+
+<form action="/signup" method="POST">
+  <input name="email" placeholder="Email"><br>
+  <input name="password" placeholder="*******"><br>
+  <input name="fullName" placeholder="Full Name"><br>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+{{#each error}}
+<p>{{this}}</p>
+{{/each}}
